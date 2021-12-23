@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManipulacaoArquivo.cs" />
     <Compile Include="LeituraBytesEstatico.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\ContaCorrente.cs" />
