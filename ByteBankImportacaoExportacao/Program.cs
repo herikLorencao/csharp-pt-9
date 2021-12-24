@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 namespace ByteBankImportacaoExportacao
 {
@@ -7,7 +6,7 @@ namespace ByteBankImportacaoExportacao
     {
         static void Main(string[] args)
         {
-            LerArquivoComReader();
+            LerBinario();
             Console.ReadLine();
         }
     }

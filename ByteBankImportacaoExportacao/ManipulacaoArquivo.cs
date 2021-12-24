@@ -52,5 +52,23 @@ namespace ByteBankImportacaoExportacao
 
             return conta;
         }
+
+        private static void EscreverComFlush()
+        {
+            using (var fileStream = new FileStream("flushTeste.txt", FileMode.Create))
+            using (var writter = new StreamWriter(fileStream))
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    writter.WriteLine($"Linha {i}");
+                    writter.Flush();
+
+                    Console.WriteLine($"Linha {i} adicionada.");
+                    Console.WriteLine("Tecle enter para continuar ...");
+
+                    Console.ReadLine();
+                }
+            }
+        }
     }
 }
