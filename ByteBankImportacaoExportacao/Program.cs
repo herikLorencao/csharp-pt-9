@@ -6,7 +6,7 @@ namespace ByteBankImportacaoExportacao
     {
         static void Main(string[] args)
         {
-            LerBinario();
+            LerDadosConsole();
             Console.ReadLine();
         }
     }
